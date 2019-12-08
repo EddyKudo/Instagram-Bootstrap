@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram on Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/1bbd72555e.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+</head>
+	<body>
+		<nav class="navbar navbar-light bg-light sticky-top container-fluid">
+			<div class="container-fluid">
+  			<a class="navbar-brand ml-5" href="#"> <i class="fab fa-instagram "></i><i>Instagram</i></a>
+  			<button type="button" class="btn btn-success ml-auto" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Create a new post</button>
+		    		<div class="dropdown" >
+						<button class="btn btn-secondary dropdown-toggle pr-3 mr-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" >
+               				 <i class="fas fa-cog"></i>
+            			</button>
+						<div class="dropdown-menu dropdown-menu-right dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Log Out</a>
+						</div>
+					</div>
+			</div>		
+		</nav>
+  			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  			  <div class="modal-dialog" role="document">
+    			<div class="modal-content">
+      				<div class="modal-header">
+       			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+      				<div class="modal-body">
+        				<form>
+		          			<div class="form-group"><textarea class="form-control" id="message-text"></textarea>
+          		  			</div>
+          		  		</form>
+          		  		<span class="border"><i class="fas fa-camera"></i></span>
+          		  		<span class="border"><i class="fas fa-map-marker-alt"></i></span>
+      				</div>
+      				<div class="modal-footer">
+        				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        				<button type="button" class="btn btn-primary">Publish</button>
+		      		</div>
+		    	  </div>
+		        </div>
+		    </div>
+			    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist" >
+    				<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-th"></i></a>
+    				<a class="nav-item nav-link" id="nav-feed-tab" data-toggle="tab" href="#feed-tab" role="tab" aria-controls="nav-feed" aria-selected="false"><i class="fas fa-square"></i></a>
+  				</div>
+		<div  class="tab-content" id="nav-tabContent">
+  			<div class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+  				<div class="row ma">
+	    			<div class="col-md-4 col-sm-6 px-3 my-3 ">
+		      			<img class="mb-3" src="http://lorempixel.com/430/400"> 
+		      			<img class="mb-3" src="http://lorempixel.com/430/400/animals"> 
+		      			<img class="mb-3" src="http://lorempixel.com/430/400/sports/1"> 
+		      			<img class="mb-3" src="http://lorempixel.com/430/400/sports/Dummy-Text"> 
+		      			<img class="mb-3" src="http://lorempixel.com/430/400">
+	    			</div>
+	    			<div class="col-md-4 col-sm-6 px-3 my-3 ">
+		    			<img class="mb-3" src="http://lorempixel.com/430/400/sports/1">
+		      			<img class="mb-3" src="http://lorempixel.com/430/400">
+		      			<img class="mb-3" src="http://lorempixel.com/430/400/nature">
+		      			<img class="mb-3" src="http://lorempixel.com/430/400/city">
+		      			<img class="mb-3" src="http://lorempixel.com/430/400/sports/Dummy-Text">
+	    			</div>
+	    			<div class="col-md-4 col-sm-6 px-3 my-3 ">
+		      			<img class="mb-3" src="http://lorempixel.com/430/400/city">
+		      			<img class="mb-3" src="http://lorempixel.com/430/400/sports/Dummy-Text">
+		      			<img class="mb-3" src="http://lorempixel.com/430/400">
+		      			<img class="mb-3" src="http://lorempixel.com/430/400/nature">
+		      			<img class="mb-3" src="http://lorempixel.com/430/400/sports/1">
+	    			</div>
+    			</div>
+		    </div>
+		<div  id="feed-tab" class="tab-pane fade" role="tabpanel" aria-labelledby="feed-tab">
+			<div class="row bg-secondary">
+    			<div class="col-md-6 col-sm-8 px-3 mx-auto">
+	      			<div class="mb-3 mt-3 border bg-light container-fluid rounded">
+	      				<div class="d-flex">
+	      					<h3 class="ml-rem"><i>My first post</i></h3><p class="ml-auto text-secondary"><b>12/14</b></p>
+	      				</div>
+	      				<div class="d-flex justify-content-center">
+	      					<img src="http://lorempixel.com/500/450">
+	      				</div>
+	      				<div>
+	      					<h6>777,111 likes</h6>
+	      					<p>This is the first comment of the first post of the feed and I'm just writing it to have text here. </p>
+	      				</div>
+	      				<div class="d-flex">
+	      					<p><i class="fas fa-hand-spock pr-3"></i>comment...</p><i class="ml-auto fas fa-ellipsis-v"></i>
+	      				</div>
+	      			</div>
+	      			<div class="mb-3 mt-3 border bg-light container-fluid rounded">
+	      				<div class="d-flex">
+	      					<h3 class="ml-rem"><i>This is the Second post</h3></i><p class="ml-auto text-secondary"><b>12/17</b></p>
+	      				</div>
+	      				<div class="d-flex justify-content-center">
+	      					<img src="http://lorempixel.com/500/450/animals">
+	      				</div>
+	      				<div>
+	      					<h6>111,777 likes</h6>
+	      					<p>This is the comment of the second post of the feed and I'm just writing it to have text here. </p>
+	      				</div>
+	      				<div class="d-flex">
+	      					<p><i class="fas fa-hand-spock pr-3"></i>comment...</p><i class="ml-auto fas fa-ellipsis-v"></i>
+	      				</div>
+	      				
+	      			</div>
+	      			<div class="mb-3 mt-3 border bg-light container-fluid rounded">
+	      				<div class="d-flex">
+	      					<h3 class="ml-rem"><i>Let's do the last one</i></h3><p class="ml-auto text-secondary"><b>12/19</b></p>
+	      				</div>
+	      				<div class="d-flex justify-content-center">
+	      					<img src="http://lorempixel.com/500/450/sports/1">
+	      				</div>
+	      				<div>
+	      					<h6>1,777,999 likes</h6>
+	      					<p>This is the last comment of the last post of the feed and I'm just writing it to have text here. </p>
+	      				</div>
+	      				<div class="d-flex">
+	      					<p><i class="fas fa-hand-spock pr-3"></i>comment...</p><i class="ml-auto fas fa-ellipsis-v"></i>
+	      				</div>  				
+	      			</div>	      			
+    			</div>  				
+    		</div>
+  		</div>
+  		</div>
+</html>
